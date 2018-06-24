@@ -30,6 +30,7 @@ def send_mail(path):
     smtp.login('bwftest126@126.com', 'abc123asd654')
     smtp.send_message(mime, from_addr='bwftest126@126.com', to_addrs='807298155@qq.com')
     smtp.quit()
+    print("邮件发送成功")
 if __name__ == '__main__':
     #2.要想批量执行,首先要明确你要执行哪些测试用例
     #只能执行继承了unittest.TestCase的类
